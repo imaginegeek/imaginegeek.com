@@ -595,3 +595,11 @@ Button
     padding: 20px 45px 25px 45px;
     border-radius: 50px;
 }
+
+
+/** Slider **/
+
+.flex-direction-nav .flex-next,
+.flex-direction-nav .flex-prev {
+    border: none !important;
+}

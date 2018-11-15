@@ -332,7 +332,7 @@ ul.client-list li {
     padding: 0;
     list-style: none;
     text-align: center;
-    border-bottom: 1px solid #2b394a;
+    border-bottom: 1px solid #75838e;
 }
 
 ul.client-list li.bottom-list {
@@ -342,7 +342,7 @@ ul.client-list li.bottom-list {
 ul.client-list li ul li {
     width: 20%;
     border-bottom: none;
-    border-right: 1px solid #2b394a;
+    border-right: 1px solid #222;
     padding: 45px 0 45px 0;
 }
 
@@ -993,8 +993,8 @@ Ui to top
     background-image: url(../img/ui.totop.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #212e3d;
-    border-bottom: 3px solid #1b2430;
+    background-color: #030303;
+    border-bottom: 3px solid #030303;
     border-radius: 5px;
 }
 
@@ -1002,8 +1002,8 @@ Ui to top
     background-image: url(../img/ui.totop.png);
     background-repeat: no-repeat;
     background-position: left -45px;
-    background-color: #303d4d;
-    border-bottom: 3px solid #27313d;
+    background-color: #030303;
+    border-bottom: 3px solid #030303;
     width: 45px;
     height: 45px;
     display: block;
@@ -1210,14 +1210,6 @@ Custom responsive
 =========================== */
 
 @media (min-width: 1200px) {
-    .navbar-default li,
-    .navbar-collapse.collapse.collapsing li {
-        opacity: 0;
-        transition: 250ms opacity ease-in-out;
-    }
-    .navbar-collapse.collapse.in li {
-        opacity: 1;
-    }
     .logo {
         padding: 40px;
     }
@@ -1365,7 +1357,7 @@ Custom responsive
         float: left;
     }
     .home-intro h3 {
-        font-size: 62px;
+        font-size: 3.5em;
         line-height: 86px;
     }
     .home-quote h3 {
@@ -1453,7 +1445,7 @@ Custom responsive
     ul.client-list li ul li,
     ul.client-list li ul li.last {
         width: 100%;
-        border: 1px solid #2b394a;
+        border: 1px solid #75838e;
         padding: 45px 0 45px 0;
         margin-bottom: 20px;
     }
