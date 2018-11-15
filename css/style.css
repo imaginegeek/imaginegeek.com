@@ -1210,6 +1210,14 @@ Custom responsive
 =========================== */
 
 @media (min-width: 1200px) {
+    .navbar-default li,
+    .navbar-collapse.collapse.collapsing li {
+        opacity: 0;
+        transition: 250ms opacity ease-in-out;
+    }
+    .navbar-collapse.collapse.in li {
+        opacity: 1;
+    }
     .logo {
         padding: 40px;
     }
@@ -1316,6 +1324,13 @@ Custom responsive
 }
 
 @media (max-width: 767px) {
+    .navbar-default li {
+        opacity: 0;
+        transition: 250ms opacity ease-in-out;
+    }
+    .navbar-collapse.collapse.in li {
+        opacity: 1;
+    }
     .navbar-header {
         float: none;
         margin: 0;

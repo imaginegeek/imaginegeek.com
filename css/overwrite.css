@@ -213,6 +213,11 @@ Navbar
     transition: all 0.3s ease-in-out;
 }
 
+.navbar-collapse {
+    border-top: 0px !important;
+    box-shadow: none;
+}
+
 .navbar-default .navbar-nav li a:hover {
     color: #da9221;
 }
@@ -220,7 +225,6 @@ Navbar
 .navbar-default .navbar-collapse .navbar-nav li a {
     color: #fff;
     font-size: 18px;
-    padding: 10px;
 }
 
 .navbar-default .navbar-nav li a.selected,
@@ -234,7 +238,6 @@ Navbar
     color: #fff;
     border: 2px solid #fff;
     border-radius: 4px;
-    padding: 10px;
 }
 
 .navbar-default .navbar-toggle,
