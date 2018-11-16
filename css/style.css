@@ -55,6 +55,8 @@ header {
     background-image: url(../img/home-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
     margin-top: 127px;
     color: #fff;
     font-size: 20px;
@@ -156,6 +158,7 @@ header {
     height: 282px;
     top: 49px;
     left: 65px;
+    overflow: hidden;
 }
 
 
@@ -542,13 +545,16 @@ Portfolio
     list-style: none;
     margin: 0 10px 30px 10px;
     width: 300px;
-    min-height: 300px;
+    min-height: 200px;
 }
 
 .image-wrapper {
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -1232,7 +1238,7 @@ Custom responsive
     }
     .portfolio-area li {
         width: 370px;
-        min-height: 370px;
+        min-height: 270px;
     }
     .slider-wrapper {
         width: 631px;
@@ -1288,7 +1294,7 @@ Custom responsive
     }
     .portfolio-area li {
         width: 230px;
-        min-height: 230px;
+        min-height: 130px;
     }
     .image-wrapper {
         border-radius: 10px;
@@ -1395,7 +1401,7 @@ Custom responsive
         float: none;
         display: inline-block;
         width: 300px;
-        min-height: 300px;
+        min-height: 200px;
     }
     .main-form-wrapper {
         margin-bottom: 40px;
