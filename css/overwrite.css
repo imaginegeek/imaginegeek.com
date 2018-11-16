@@ -224,7 +224,6 @@ Navbar
 
 .navbar-default .navbar-collapse .navbar-nav li a {
     color: #fff;
-    font-size: 18px;
 }
 
 .navbar-default .navbar-nav li a.selected,
@@ -502,7 +501,7 @@ Form
     color: #fff;
     background-color: none;
     border: 5px solid #fff;
-    border-radius: 40px;
+    border-radius: 7px;
     background: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -518,7 +517,7 @@ Form
 }
 
 textarea.form-control {
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
 .form-group {
@@ -556,6 +555,7 @@ Button
 .btn:hover,
 .btn:focus {
     color: #fff;
+    background-color: #222;
     text-decoration: none;
 }
 

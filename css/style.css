@@ -75,9 +75,9 @@ header {
 }
 
 .home-intro h3 {
-    font-size: 122px;
+    font-size: 1.7em;
     line-height: 120px;
-    text-shadow: 8px 8px rgba(0, 0, 0, 0.24);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
     margin-bottom: 40px;
 }
 
@@ -517,7 +517,7 @@ Portfolio
 .portfolio-categ li a {
     border: 3px solid #030303;
     color: #030303;
-    border-radius: 40px;
+    border-radius: 7px;
     padding: 5px 20px 5px 20px;
     font-size: 18px;
     line-height: 22px;
@@ -1357,8 +1357,8 @@ Custom responsive
         float: left;
     }
     .home-intro h3 {
-        font-size: 3.5em;
-        line-height: 86px;
+        font-size: 2.5em;
+        line-height: 2.5em;
     }
     .home-quote h3 {
         font-size: 42px;
@@ -1445,7 +1445,6 @@ Custom responsive
     ul.client-list li ul li,
     ul.client-list li ul li.last {
         width: 100%;
-        border: 1px solid #75838e;
         padding: 45px 0 45px 0;
         margin-bottom: 20px;
     }

@@ -26,7 +26,7 @@
 
 	        var settings = {
 	            offset: -127, //an integer allowing you to offset the position by a certain number of pixels. Can be negative or positive
-	            speed: 'slow', //speed at which the scroll animates
+	            speed: 300, //speed at which the scroll animates
 	            override: null, //if you want to override the default way this plugin works, pass in the ID of the element you want to scroll through here
 	            easing: null //easing equation for the animation. Supports easing plugin as well (http://gsgd.co.uk/sandbox/jquery/easing/)
 	        };
@@ -60,6 +60,19 @@
 	            });
 	        });
 	    };
+
+	    /** 
+	     *  Nav link click hides mobile menu if it the mobile menu is visible.
+	     *  Allow the user to see the menu item animate to selected before closing the menu.
+	     */
+	    $('.navbar-nav li a').click((event) => {
+	        event.preventDefault();
+	        setTimeout(() => {
+	            if ($('.navbar-toggle').is(':visible')) {
+	                $('.navbar-collapse').collapse('hide');
+	            }
+	        }, 1250);
+	    });
 
 	    $('#GoToHome, .GoToto, #GoToWorks, #GoToFeatures, #GoToTeam, #GoToGallery, #GoToContact').scrollTo({ speed: 1400 });
 
@@ -99,5 +112,4 @@
 	            $('navbar-nav li a:last').addClass('selected');
 	        }
 	    });
-
 	});
