@@ -5,3 +5,9 @@
 .ig-container .ig-font-white {
     color: #fff;
 }
+
+.ig-container .ig-raised-font {
+    font-weight: 900;
+    text-shadow: 0 4px 0 rgba(139, 13, 112, 0.87), 0 6px 0#000;
+    border-image: linear-gradient(to bottom right, rgba(139, 13, 112, 0.87), rgba(201, 100, 23, 0.87), rgba(12, 190, 12, 0.87));
+}

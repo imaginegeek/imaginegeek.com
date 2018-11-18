@@ -1,4 +1,7 @@
 (function($) {
-	'use strict';
-	$('#nivo-slider').nivoSlider();
+    'use strict';
+
+    $('#nivo-slider').nivoSlider({
+        effect: 'fade'
+    });
 })(jQuery);

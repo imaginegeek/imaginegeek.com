@@ -32,9 +32,8 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
-    margin: 0 0 15px 0;
-    font-weight: 700;
 }
 
 h1 {
@@ -156,7 +155,7 @@ Navbar
 .logo {
     float: left;
     margin: 0;
-    padding: 36px;
+    padding: 30px;
 }
 
 .navbar-collapse.collapse.collapsing,

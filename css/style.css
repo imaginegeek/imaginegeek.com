@@ -77,9 +77,8 @@ header {
 }
 
 .home-intro h3 {
-    font-size: 1.7em;
+    font-size: 2.8em;
     line-height: 120px;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
     margin-bottom: 40px;
 }
 
@@ -93,7 +92,7 @@ header {
 .home-quote h3 {
     font-size: 92px;
     line-height: 100px;
-    text-shadow: 8px 8px rgba(0, 0, 0, 0.24);
+    text-shadow: 12px 12px rgba(0, 0, 0, 0.24);
     margin-bottom: 40px;
 }
 
@@ -556,6 +555,12 @@ Portfolio
     width: 300px;
     overflow: hidden;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.75);
+    transition: box-shadow 150ms ease-in;
+}
+
+.image-wrapper:focus,
+.image-wrapper:active {
+    box-shadow: none;
 }
 
 .img-gallery {
@@ -1217,7 +1222,7 @@ Custom responsive
 
 @media (min-width: 1200px) {
     .logo {
-        padding: 40px;
+        padding: 30px;
     }
     .navbar-default .collapse {
         margin: 40px 40px 0 0;
@@ -1245,6 +1250,9 @@ Custom responsive
         height: 342px;
         top: 60px;
         left: 76px;
+    }
+    .home-intro h3 {
+        font-size: 2em;
     }
 }
 
@@ -1363,8 +1371,8 @@ Custom responsive
         float: left;
     }
     .home-intro h3 {
-        font-size: 2.5em;
-        line-height: 2.5em;
+        font-size: 2.1em;
+        line-height: 1.5em;
     }
     .home-quote h3 {
         font-size: 42px;
