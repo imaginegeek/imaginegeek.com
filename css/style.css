@@ -66,6 +66,9 @@ header {
 .home-wrapper {
     position: relative;
     padding: 100px 0 150px 0;
+    max-height: 55%;
+    max-height: 55vh;
+    overflow: hidden;
 }
 
 .home-wrapper.custom-padding {
@@ -76,10 +79,17 @@ header {
     margin-bottom: 40px;
 }
 
+.home-intro-content {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 100%;
+}
+
 .home-intro h3 {
-    font-size: 2.8em;
-    line-height: 120px;
-    margin-bottom: 40px;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    margin-bottom: 15%;
 }
 
 .home-intro h4 {
@@ -94,6 +104,17 @@ header {
     line-height: 100px;
     text-shadow: 12px 12px rgba(0, 0, 0, 0.24);
     margin-bottom: 40px;
+}
+
+.btn-tilted,
+.home-intro h3 {
+    transform: rotateX(20deg);
+}
+
+.btn-tilted {
+    position: absolute;
+    top: 30%;
+    left: 40%;
 }
 
 .btn-arrow {
@@ -123,7 +144,6 @@ header {
 }
 
 .main-form-wrapper {
-    border: 5px solid #fff;
     border-radius: 20px;
     padding: 20px;
 }
@@ -140,6 +160,10 @@ header {
 
 .main-form-wrapper label {
     margin-bottom: 10px;
+}
+
+.slider-bg {
+    margin-top: 10%;
 }
 
 .main-form-wrapper hr {
@@ -174,7 +198,7 @@ Contain
 }
 
 .secondary-bg {
-    color: #030303;
+    color: #FFF;
 }
 
 .dark-bg {
@@ -222,7 +246,6 @@ How it works
     position: relative;
     float: left;
     width: 100%;
-    background: url(../img/vertical-line.png) repeat-y top center;
     padding: 75px 0 75px 0;
 }
 
@@ -246,7 +269,7 @@ How it works
 }
 
 .work-it-contain {
-    width: 50%;
+    width: 80%;
     clear: both;
     margin-bottom: 20px;
 }
@@ -264,7 +287,6 @@ How it works
 }
 
 .work-it-icon {
-    background-image: url(../img/work-it-icon-line.png);
     background-repeat: no-repeat;
     width: 175px;
     text-align: center;
@@ -288,7 +310,6 @@ How it works
     display: block;
     width: 130px;
     height: 130px;
-    border: 5px solid #030303;
     border-radius: 50%;
     font-size: 58px;
     line-height: 58px;
@@ -302,7 +323,6 @@ How it works
 
 .work-it-text {
     width: 70%;
-    border: 5px solid #030303;
     padding: 20px 20px 10px 20px;
     border-radius: 10px;
 }
@@ -517,8 +537,8 @@ Portfolio
 }
 
 .portfolio-categ li a {
-    border: 3px solid #030303;
-    color: #030303;
+    border: 3px solid #FFF;
+    color: #FFF;
     border-radius: 7px;
     padding: 5px 20px 5px 20px;
     font-size: 18px;
@@ -962,7 +982,6 @@ Heading
 
 .heading h4,
 .headline h4 {
-    background: url(../img/heading-bg.png) no-repeat bottom center;
     padding-bottom: 20px;
     font-size: 48px;
     line-height: 56px;
@@ -1224,15 +1243,18 @@ Custom responsive
     .logo {
         padding: 30px;
     }
-    .navbar-default .collapse {
-        margin: 40px 40px 0 0;
+    .logo svg {
+        width: 220px;
     }
-    .navbar-default .navbar-nav li a,
-    .navbar-default .navbar-nav li a:focus {
-        font-size: 16px;
-        line-height: 20px;
-        padding: 5px 20px 5px 20px;
-        margin: 5px 2px 5px 2px;
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus {
+        background: none;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        margin: 42px 40px 0 0;
+        position: fixed;
+        top: -0.5em;
+        right: -0.85em;
     }
     .navbar-right .btn {
         border: 3px solid #fff;
@@ -1252,20 +1274,24 @@ Custom responsive
         left: 76px;
     }
     .home-intro h3 {
-        font-size: 2em;
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
-    .navbar-default .collapse {
-        margin: 40px;
+    .navbar-default .navbar-nav li a.selected,
+    .navbar-default .navbar-nav .active a,
+    .navbar-default .navbar-nav .dropdown.active a,
+    .navbar-default .navbar-nav .active a:hover,
+    .navbar-default .navbar-nav .dropdown.active a:hover,
+    .navbar-default .navbar-nav .active a:focus,
+    .navbar-default .navbar-nav .dropdown.active a:focus {
+        background: none;
+        color: #fff;
+        border-radius: 4px;
     }
-    .navbar-default .navbar-nav li a,
-    .navbar-default .navbar-nav li a:focus {
-        font-size: 12px;
-        line-height: 14px;
-        padding: 5px 10px 5px 10px;
-        margin: 5px 1px 5px 1px;
+    .navbar-default .navbar-collapse .navbar-nav li a {
+        color: #fff;
     }
     .navbar-right .btn {
         font-weight: 400;
@@ -1330,6 +1356,31 @@ Custom responsive
 }
 
 @media (max-width: 767px) {
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus {
+        position: fixed;
+        top: -0.5em;
+        right: -0.85em;
+        margin: 50px 25px 0 0;
+    }
+    .navbar-default .navbar-nav li a {
+        font-size: 14px;
+    }
+    .navbar-collapse .collapse,
+    .navbar-default .collapse {
+        margin: 82px 10px 10px 0;
+    }
+    .home-intro-content {
+        position: absolute;
+        left: 0;
+        top: 15%;
+        width: 100%;
+    }
+    .home-wrapper {
+        max-height: 35vh;
+        min-height: 160px;
+        overflow: hidden;
+    }
     .navbar-default li {
         opacity: 0;
         transition: 250ms opacity ease-in-out;
@@ -1371,8 +1422,8 @@ Custom responsive
         float: left;
     }
     .home-intro h3 {
-        font-size: 2.1em;
-        line-height: 1.5em;
+        font-size: 0.7em;
+        line-height: 0.7em;
     }
     .home-quote h3 {
         font-size: 42px;
@@ -1432,9 +1483,10 @@ Custom responsive
         margin-top: 0;
     }
     .slider-bg {
-        width: 464px;
-        height: 249px;
         margin: 0 auto;
+        min-width: 50%;
+        width: 50%;
+        margin-top: -4em;
     }
     .slider-wrapper {
         width: 392px;
@@ -1453,6 +1505,10 @@ Custom responsive
 }
 
 @media only screen and (max-width: 650px) {
+    .home-intro h3 {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
     ul.client-list li {
         border: none;
     }
@@ -1483,6 +1539,16 @@ Custom responsive
         line-height: 18px;
         margin-top: 0;
         padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus {
+        position: fixed;
+        top: -0.5em;
+        right: -0.85em;
+        margin: 15px 10px 0 0;
     }
 }
 

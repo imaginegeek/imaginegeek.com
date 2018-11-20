@@ -1,3 +1,13 @@
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+.ig-container textarea {
+    padding: 1em;
+}
+
 .ig-container .ig-gradient {
     background-image: linear-gradient(to bottom right, rgba(139, 13, 112, 0.87), rgba(201, 100, 23, 0.87), rgba(12, 190, 12, 0.87));
 }
@@ -9,5 +19,8 @@
 .ig-container .ig-raised-font {
     font-weight: 900;
     text-shadow: 0 4px 0 rgba(139, 13, 112, 0.87), 0 6px 0#000;
-    border-image: linear-gradient(to bottom right, rgba(139, 13, 112, 0.87), rgba(201, 100, 23, 0.87), rgba(12, 190, 12, 0.87));
+}
+
+.ig-container {
+    min-width: 320px;
 }

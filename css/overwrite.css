@@ -5,7 +5,7 @@ Typography
 body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-    color: #4e4e4e;
+    color: ;
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
@@ -198,12 +198,12 @@ Navbar
 
 .navbar-default .navbar-nav li a,
 .navbar-default .navbar-nav li a:focus {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 400;
     color: #fff;
-    padding: 5px 10px 5px 10px;
-    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    margin: 2px;
     border: 2px solid #030303;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -499,7 +499,7 @@ Form
     line-height: 1.428571429;
     color: #fff;
     background-color: none;
-    border: 5px solid #fff;
+    border-bottom: 5px solid #fff;
     border-radius: 7px;
     background: none;
     -webkit-box-shadow: none;

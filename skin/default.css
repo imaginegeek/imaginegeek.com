@@ -55,7 +55,7 @@ div.pp_default .pp_close:hover,
 .style1 .accordion-heading a:hover,
 .tabbable.style1 .tabber li a:hover .secondary-bg .style1 .accordion-heading a:hover,
 .secondary-bg .tabbable.style1 .tabber li a:hover {
-    background-color: #e95644;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -84,7 +84,7 @@ Secondary color
 .work-it-text,
 .primary-bg .style1 .accordion-heading a:hover,
 .primary-bg .tabbable.style1 .tabber li a:hover {
-    background-color: #f9bb3d;
+    background-color: rgb(63, 9, 60);
 }
 
 #home .btn:hover,
@@ -99,5 +99,6 @@ Secondary color
 .primary-bg .tabbable.style2 .tabber li.active a:hover,
 .primary-bg .tabbable.style2 .tabber li.active a:focus,
 .primary-bg .tabbable.style2 .tabber li.active a:active {
-    border-color: #f9bb3d;
+    border-color: #e95644;
+    ;
 }
