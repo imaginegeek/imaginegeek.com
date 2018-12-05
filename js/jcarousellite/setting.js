@@ -4,16 +4,16 @@ $(window).load(function() {
 
     $(".scrolltop").jCarouselLite({
         vertical: true,
-        hoverPause: true,
         easing: "easeOutBounce",
         visible: 1,
         auto: 6500,
         speed: 1000,
-        beforeStart: function(element) {
-            const $element = $(element).find('h3').removeClass('hidden').fadeOut().fadeIn('slow');
+        beforeStart: function(anchorElement) {
+            console.log(anchorElement);
+            $(anchorElement).addClass('typewriter');
         },
-        afterEnd: function(element) {
-
+        afterEnd: function(anchorElement) {
+            $(anchorElement).removeClass('typewriter');
         }
     });
 });

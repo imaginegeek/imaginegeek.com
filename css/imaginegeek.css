@@ -9,7 +9,7 @@
 }
 
 .ig-container .ig-gradient {
-    background-image: linear-gradient(to bottom right, rgba(139, 13, 112, 0.87), rgba(201, 100, 23, 0.87), rgba(12, 190, 12, 0.87));
+    background-image: linear-gradient(to bottom right, rgba(192, 6, 152, 0.67), rgba(201, 100, 23, 0.67), rgba(12, 190, 12, 0.67));
 }
 
 .ig-container .ig-font-white {
@@ -18,9 +18,93 @@
 
 .ig-container .ig-raised-font {
     font-weight: 900;
-    text-shadow: 0 4px 0 rgba(139, 13, 112, 0.87), 0 6px 0#000;
+    color: #fff;
 }
 
 .ig-container {
     min-width: 320px;
+}
+
+.ig-container .ig-flash-section {
+    background-color: #000;
+}
+
+.ig-container .fas.fa-bars {
+    font-size: 2em;
+    color: #fff;
+}
+
+.ig-container .ig-img-sm {
+    max-width: 163px;
+    margin-top: 38%;
+    margin-left: 18%;
+}
+
+.ig-container .image-cap .ig-img-med {
+    max-width: 200px;
+    top: 56%;
+    margin-top: 22%;
+    margin-left: 20%;
+}
+
+.ig-container .image-cap .ig-img-lg {
+    max-width: 550px;
+    top: 24%;
+}
+
+.ig-container input,
+.ig-container select,
+.ig-container textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.ig-container #quote {
+    display: inline;
+    font-size: 22px;
+    box-sizing: border-box;
+    background-color: #8b34c2;
+    border: none;
+    border-radius: 0;
+    margin: auto auto 3em auto;
+    border: 5px transparent solid;
+}
+
+.ig-container .home-intro-content {
+    margin-bottom: 5em;
+}
+
+.ig-container .staggered-alignment:nth-child(even) {
+    text-align: left;
+}
+
+.ig-container .staggered-alignment:nth-child(odd) {
+    text-align: right;
+}
+
+.ig-container .ig-work-it-dark .work-it-icon {
+    font-size: 0.8em;
+}
+
+.ig-container .ig-work-it-dark .work-it-icon,
+.ig-container .ig-work-it-dark .work-it-text {
+    color: #030303;
+    background: transparent;
+}
+
+.ig-container .headline h4 {
+    width: 100%;
+}
+
+.ig-container .image-cap {
+    position: absolute;
+    width: 35%;
+    top: 13.5%;
+    margin-left: 10%;
+}
+
+.ig-mascot {
+    width: 180px;
 }

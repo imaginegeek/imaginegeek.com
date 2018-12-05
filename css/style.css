@@ -1,43 +1,3 @@
-/* ==============================================================
-
-Template name : Flates flat and responsive landing page
-Categorie : Landing page
-Author : Nce18cex
-Version : v1.0.0
-Created : 19 Mei 2014
-Last update : 26 Mei 2014
-
------------------------------------------------------------------
-CSS structure
------------------------------------------------------------------
-
-01. Header
-02. Contain
-03. Sign up and sign in
-04. How it works
-05. Client
-06. Testimonials
-07. Ticker
-08. Team
-09. Portfolio
-10. Contact
-11. Call to action
-12. Footer
-13. Social network
-14. Scroller
-15. Animated
-16. Heading
-17. Ui to top
-18. Clear spacer
-19. Custom top spacer
-20. Custom bottom spacer
-21. Custom left spacer
-22. Custom right spacer
-23. Custom responsive
-
-============================================================== */
-
-
 /*
 Header
 =========================== */
@@ -52,7 +12,7 @@ header {
 }
 
 #home {
-    background-image: url(https://cdn.bootstrappingecommerce.com/wp-content/uploads/2018/07/Service-Based-Startup-Business-Ideas.jpg);
+    background-image: url(https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -63,11 +23,24 @@ header {
     line-height: 30px;
 }
 
+#quote {
+    display: block;
+    width: 20%;
+    font-size: 22px;
+    box-sizing: border-box;
+    background-color: #8b34c2;
+    border: none;
+    border-radius: 0;
+    margin-left: 40%;
+    border: 5px transparent solid;
+    margin-bottom: 1em;
+}
+
 .home-wrapper {
     position: relative;
     padding: 100px 0 150px 0;
-    max-height: 55%;
-    max-height: 55vh;
+    min-height: 300px;
+    height: 90%;
     overflow: hidden;
 }
 
@@ -79,42 +52,34 @@ header {
     margin-bottom: 40px;
 }
 
-.home-intro-content {
-    position: absolute;
-    left: 0;
-    top: 22%;
-    width: 100%;
+.home-intro-content li {
+    margin: auto;
 }
 
 .home-intro h3 {
-    font-size: 0.9em;
-    line-height: 0.9em;
-    margin-bottom: 15%;
+    font-size: 2.6em;
+    line-height: 1.8em;
+    text-shadow: 2px 2px #000;
 }
 
 .home-intro h4 {
     font-size: 32px;
     line-height: 45px;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.24), -2px -2px #000;
     margin-bottom: 40px;
 }
 
 .home-quote h3 {
     font-size: 92px;
     line-height: 100px;
-    text-shadow: 12px 12px rgba(0, 0, 0, 0.24);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24), -2px -2px #000;
     margin-bottom: 40px;
-}
-
-.btn-tilted,
-.home-intro h3 {
-    transform: rotateX(20deg);
 }
 
 .btn-tilted {
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 20%;
+    left: 32%;
 }
 
 .btn-arrow {
@@ -162,10 +127,6 @@ header {
     margin-bottom: 10px;
 }
 
-.slider-bg {
-    margin-top: 10%;
-}
-
 .main-form-wrapper hr {
     height: 2px;
     background: #fff;
@@ -204,6 +165,12 @@ Contain
 .dark-bg {
     background: #030303;
     color: #75838e;
+}
+
+.accent-bg {
+    background-image: url(https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg);
+    background-color: #8b34c2;
+    color: #fff;
 }
 
 
@@ -311,7 +278,7 @@ How it works
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    font-size: 58px;
+    font-size: 7em;
     line-height: 58px;
     padding-top: 30px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -325,6 +292,7 @@ How it works
     width: 70%;
     padding: 20px 20px 10px 20px;
     border-radius: 10px;
+    font-size: 1.4em;
 }
 
 .work-it-contain.on-right .work-it-text {
@@ -378,6 +346,10 @@ ul.client-list li ul li.last {
     padding: 0;
     display: block;
     text-align: center;
+}
+
+.ig-container .client-link {
+    color: #fff;
 }
 
 .logo-hover {
@@ -672,6 +644,14 @@ ul.listForm li {
     list-style: none;
 }
 
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #ae7f;
+    color: #000;
+}
+
 .btn-submit {
     background: none;
     border-radius: 40px;
@@ -703,7 +683,6 @@ Call to action
 =========================== */
 
 #cta-section p {
-    background: url(../img/cta-text-line.png) no-repeat bottom center;
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
@@ -888,6 +867,31 @@ Animated
     animation-fill-mode: both;
 }
 
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
 @-webkit-keyframes bounce {
     0%,
     20%,
@@ -976,7 +980,6 @@ Heading
     position: relative;
     background: #e4e8ea;
     color: #030303;
-    padding: 60px 0 50px 0;
     margin: 0;
 }
 
@@ -985,6 +988,10 @@ Heading
     padding-bottom: 20px;
     font-size: 48px;
     line-height: 56px;
+}
+
+.primary-bg {
+    transition: 500ms all ease;
 }
 
 .primary-bg .heading h4 {
@@ -1192,6 +1199,17 @@ Custom bottom spacer
     margin-bottom: 60px;
 }
 
+.slider-bg {
+    box-sizing: border-box;
+    margin: -2% auto auto;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+    max-width: 600px;
+}
+
 
 /*
 Custom left spacer
@@ -1234,11 +1252,6 @@ Custom right spacer
     margin-right: 20px;
 }
 
-
-/*
-Custom responsive
-=========================== */
-
 @media (min-width: 1200px) {
     .logo {
         padding: 30px;
@@ -1272,9 +1285,6 @@ Custom responsive
         height: 342px;
         top: 60px;
         left: 76px;
-    }
-    .home-intro h3 {
-        font-size: 1.2em;
     }
 }
 
@@ -1323,6 +1333,10 @@ Custom responsive
         margin: 0 auto;
         margin-top: 20px;
     }
+    .work-it-text p {
+        font-size: 1.4em;
+        letter-spacing: 0.05em;
+    }
     .team-image-wrapper {
         margin-bottom: 30px;
     }
@@ -1353,9 +1367,33 @@ Custom responsive
         top: 57px;
         left: 73px;
     }
+    .slider-bg {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
+    .ig-container .home-intro-content {
+        display: block;
+        position: relative;
+    }
+    .home-intro h3 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        margin-bottom: 7%;
+    }
+    .ig-container #quote.btn-tilted {
+        font-size: 1em;
+        left: 0;
+        line-height: 0.4em;
+        top: 2.5em;
+        padding: 2em;
+        width: 100%;
+    }
+    .slider-bg,
+    .slider-wrapper {
+        display: none;
+    }
     .navbar-default .navbar-toggle,
     .navbar-default .navbar-toggle:focus {
         position: fixed;
@@ -1364,7 +1402,7 @@ Custom responsive
         margin: 50px 25px 0 0;
     }
     .navbar-default .navbar-nav li a {
-        font-size: 14px;
+        font-size: 1.8em;
     }
     .navbar-collapse .collapse,
     .navbar-default .collapse {
@@ -1375,10 +1413,11 @@ Custom responsive
         left: 0;
         top: 15%;
         width: 100%;
+        margin-bottom: 5em;
     }
     .home-wrapper {
         max-height: 35vh;
-        min-height: 160px;
+        min-height: 360px;
         overflow: hidden;
     }
     .navbar-default li {
@@ -1406,7 +1445,7 @@ Custom responsive
     }
     .navbar-default .navbar-nav li a,
     .navbar-default .navbar-nav li a:focus {
-        padding: 5px 20px 5px 20px;
+        padding: 1em;
         margin: 5px 2px 5px 2px;
     }
     .navbar-default .navbar-nav li a.selected,
@@ -1420,10 +1459,6 @@ Custom responsive
     }
     .navbar-right {
         float: left;
-    }
-    .home-intro h3 {
-        font-size: 0.7em;
-        line-height: 0.7em;
     }
     .home-quote h3 {
         font-size: 42px;
@@ -1484,9 +1519,8 @@ Custom responsive
     }
     .slider-bg {
         margin: 0 auto;
-        min-width: 50%;
-        width: 50%;
-        margin-top: -4em;
+        width: 60%;
+        margin-top: -3em;
     }
     .slider-wrapper {
         width: 392px;
@@ -1505,9 +1539,19 @@ Custom responsive
 }
 
 @media only screen and (max-width: 650px) {
+    .ig-container .home-intro-content {
+        display: block;
+        position: relative;
+    }
+    .ig-container #quote.btn-tilted {
+        font-size: 1em;
+        left: 0;
+        bottom: 0px;
+    }
     .home-intro h3 {
-        font-size: 1.2em;
-        line-height: 1.4em;
+        font-size: 1.3em;
+        line-height: 1.2em;
+        margin-bottom: 7%;
     }
     ul.client-list li {
         border: none;
@@ -1540,15 +1584,29 @@ Custom responsive
         margin-top: 0;
         padding: 0;
     }
+    .slider-wrapper {
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
+    .ig-container .home-intro-content {
+        display: block;
+    }
+    .ig-container #quote.btn-tilted {
+        font-size: 1em;
+        left: 0;
+        bottom: 0px;
+    }
     .navbar-default .navbar-toggle,
     .navbar-default .navbar-toggle:focus {
         position: fixed;
         top: -0.5em;
         right: -0.85em;
         margin: 15px 10px 0 0;
+    }
+    .slider-wrapper {
+        display: none;
     }
 }
 

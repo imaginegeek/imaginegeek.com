@@ -1,7 +1,9 @@
 (function($) {
     'use strict';
 
-    $('.ig-container').addClass('animated').removeClass('hidden').addClass('fadeIn');
+    setTimeout(function() {
+        $('.ig-container').addClass('animated').removeClass('hidden').addClass('fadeIn')
+    }, 500);
 
 
     /*
