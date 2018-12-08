@@ -14,9 +14,10 @@ body {
 
 p {
     margin: 0 0 25px 0;
-    font-size: 1.35em;
+    font-size: 1.85em;
     line-height: 1.25em;
     letter-spacing: 0.065;
+    font-weight: 300;
 }
 
 a,
@@ -34,7 +35,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 900;
+    font-weight: 100;
     text-transform: uppercase;
 }
 
@@ -67,6 +68,10 @@ h6 {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 10px;
+}
+
+textarea {
+    text-align: left;
 }
 
 ul {
@@ -228,6 +233,7 @@ Navbar
 
 .navbar-default .navbar-collapse .navbar-nav li a {
     color: #fff;
+    padding: 0.7em;
 }
 
 .navbar-default .navbar-nav li a.selected,
@@ -237,9 +243,12 @@ Navbar
 .navbar-default .navbar-nav .dropdown.active a:hover,
 .navbar-default .navbar-nav .active a:focus,
 .navbar-default .navbar-nav .dropdown.active a:focus {
-    background: none;
     color: #fff;
-    border-top: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
 }
 
 .navbar-default .navbar-toggle,
@@ -557,8 +566,9 @@ Button
 
 .btn:hover,
 .btn:focus {
+    background: #8b34c2;
     color: #fff;
-    background-color: #222;
+    border-color: #fff;
     text-decoration: none;
 }
 

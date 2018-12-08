@@ -3,7 +3,7 @@
 
     setTimeout(function() {
         $('.ig-container').addClass('animated').removeClass('hidden').addClass('fadeIn')
-    }, 500);
+    }, 20);
 
 
     /*

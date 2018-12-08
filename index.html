@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="ig-container">
+<html lang="en" class="ig-container hidden">
 
 <head>
     <meta charset="utf-8">
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--[if lt IE 9]>
 	  <link href="css/font-awesome-ie7.css" rel="stylesheet">
-	<![endif]-->
+    <![endif]-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
     <link href="css/font-awesome-set.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">
     <link href="css/nivo-slider.css" rel="stylesheet">
@@ -81,16 +82,19 @@
                     </ul>
                 </div>
             </div>
+            <div class="ig-call-button-wrapper">
+                <a href="tel:9544803680" class="ig-call-button btn btn-dark">954 480-3680&nbsp;&nbsp;<i class="fas fa-phone"></i></a>
+            </div>
         </header>
         <section id="home">
             <div class="ig-gradient home-wrapper custom-padding">
                 <div class="row text-center">
                     <div class="home-intro-content col-xs-12">
-                        <img class="ig-mascot" src="img/features/super-coders.svg" />
-                        <div class="scrolltop home-intro">
+                        <img class="animated fadeIn ig-mascot" src="img/features/super-coders.svg" />
+                        <div class="scrolltop home-intro animated fadeIn">
                             <ul>
                                 <li>
-                                    <h3>Need a new website or app?</h3>
+                                    <h3>Need a new website?</h3>
                                 </li>
                                 <li>
                                     <h3>Existing website or app need work?</h3>
@@ -103,7 +107,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a id="quote" href="#quote-section" class="btn btn-lg">Request a consultation</a>
+                        <a id="quote" href="#quote-section" class="btn btn-lg animated zoomInUp">Request a consultation</a>
                     </div>
                 </div>
             </div>
@@ -112,29 +116,29 @@
         <section id="work" class="contain secondary-bg">
             <div class="container">
                 <div class="row cbp-so-section">
-                    <div class="col-md-10 col-md-offset-1 cbp-so-side cbp-so-side-top">
+                    <div class="col-md-10 col-lg-12 col-lg-offset-0 col-md-offset-1">
                         <div class="heading">
-                            <h4><i class="fas laptop-code"></i>Our Process</h4>
-                            <p>
+                            <h4 class="cbp-so-side cbp-so-side-top"><i class="fas laptop-code"></i>Our Process</h4>
+                            <p class="cbp-so-side cbp-so-side-top">
                                 We specialize in creating modern, custom websites for our clients. Working closely with small, large or growing businesses to ensure the website is tailored to attract customers and increase sales for our clients overall.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row cbp-so-section">
                     <div class="col-md-12">
-                        <div class="work-it-wrapper">
-                            <div class="work-it-contain on-right cbp-so-section">
-                                <div class="work-it-icon">
+                        <div class="work-it-wrapper work-it-lifted-text-md">
+                            <div class="work-it-contain on-right">
+                                <div class="work-it-icon cbp-so-side cbp-so-side-left">
                                     <i class="fas fa-brain"></i>
                                 </div>
-                                <div class="work-it-text cbp-so-side cbp-so-side-right">
-                                    <h5>Step 1: Imagine</h5>
+                                <div class="work-it-text cbp-so-side cbp-so-side-right ig-underline">
+                                    <h5>Imagine</h5>
                                     <p>Imagine the website that defines your company with the help of our expert team will go through every step of how your thoughts can become reality.</p>
                                 </div>
                             </div>
-                            <div class="work-it-contain on-left cbp-so-section">
-                                <div class="work-it-icon">
+                            <div class="work-it-contain on-left">
+                                <div class="work-it-icon cbp-so-side cbp-so-side-right">
                                     <i class="fas fa-check-square"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-left">
@@ -142,8 +146,8 @@
                                     <p>You have total control of what is being placed on the site and our team will ensure that you approve of everything that is being done.</p>
                                 </div>
                             </div>
-                            <div class="work-it-contain on-right cbp-so-section">
-                                <div class="work-it-icon">
+                            <div class="work-it-contain on-right">
+                                <div class="work-it-icon cbp-so-side cbp-so-side-left">
                                     <i class="fas fa-smile"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-right">
@@ -151,8 +155,8 @@
                                     <p>Relax while we create your website with the latest and greatest technologies. We aim for a stress-free experience for all our clients.</p>
                                 </div>
                             </div>
-                            <div class="work-it-contain on-left cbp-so-section">
-                                <div class="work-it-icon">
+                            <div class="work-it-contain on-left">
+                                <div class="work-it-icon cbp-so-side cbp-so-side-right">
                                     <i class="fas fa-grin-hearts"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-left">
@@ -169,26 +173,21 @@
             <div class="container margintop30">
                 <div class="row cbp-so-section">
                     <div class="col-md-10 col-md-offset-1 cbp-so-side cbp-so-side-top">
-                        <div class="heading marginbot30 margintop30">
-                            <h4>
-                                <span><i class="fas fa-gift"></i></span> Features
-                            </h4>
-                        </div>
-                        <div class="work-it-wrapper ig-work-it-dark">
+                        <div class="work-it-wrapper ig-work-it-dark work-it-lifted-text-sm">
                             <div class="work-it-contain on-right cbp-so-section">
                                 <div class="work-it-icon">
                                     <i class="fas fa-calendar-check"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-right">
-                                    <p>Proven Design Philosophies.</p>
+                                    <h3>Proven Design Philosophies</h3>
                                 </div>
                             </div>
                             <div class="work-it-contain on-left cbp-so-section">
                                 <div class="work-it-icon">
                                     <i class="fas fa-magic"></i>
                                 </div>
-                                <div class="work-it-text cbp-so-side cbp-so-side-left">
-                                    <p>Custom Made Vector Graphics</p>
+                                <div class="work-it-text text-right cbp-so-side cbp-so-side-left">
+                                    <h3>Custom Made Vector Graphics</h3>
                                 </div>
                             </div>
                             <div class="work-it-contain on-right cbp-so-section">
@@ -196,15 +195,15 @@
                                     <i class="fas fa-code"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-right">
-                                    <p>Clean code that is easy to comprehend and maintain</p>
+                                    <h3>Clean, Maintainable Code</h3>
                                 </div>
                             </div>
                             <div class="work-it-contain on-left cbp-so-section">
                                 <div class="work-it-icon">
                                     <i class="fas fa-lock"></i>
                                 </div>
-                                <div class="work-it-text cbp-so-side cbp-so-side-left">
-                                    <p>Lock Tight Application Security</p>
+                                <div class="work-it-text text-right cbp-so-side cbp-so-side-left">
+                                    <h3>Lock Tight Security</h3>
                                 </div>
                             </div>
                             <div class="work-it-contain on-right cbp-so-section">
@@ -212,15 +211,15 @@
                                     <i class="fas fa-shield-alt"></i>
                                 </div>
                                 <div class="work-it-text cbp-so-side cbp-so-side-right">
-                                    <p>Safe and Secure Point of Sale (POS)</p>
+                                    <h3>Safe and Secure</h3>
                                 </div>
                             </div>
                             <div class="work-it-contain on-left cbp-so-section">
                                 <div class="work-it-icon">
                                     <i class="fas fa-headset"></i>
                                 </div>
-                                <div class="work-it-text cbp-so-side cbp-so-side-left">
-                                    <p>Human support included</p>
+                                <div class="work-it-text text-right cbp-so-side cbp-so-side-left">
+                                    <h3>Human Support Included</h3>
                                 </div>
                             </div>
                         </div>
@@ -231,48 +230,44 @@
                 <ul class="slides">
                     <li>
                         <div class="image-cap">
-                            <img src="img/imac.png" alt="" />
+                            <img class="ig-img-lg" src="img/slider/devices.png" alt="" />
                         </div>
                         <div class="text-cap">
                             <h4>Impressive Look on any Device</h4>
-                            <p>Whether your customers are computer users, <br> die-hard tablet advocates or mobile-only fanatics, <br> your website will always look how you want. We <br> ensure cohesiveness throughout any device any customer uses.</p>
-                            <a href="#" class="text-link">Learn more</a>
+                            <p class="big-paragraph">Whether your customers are computer users, die-hard tablet advocates or mobile-only fanatics, your website will always look how you want. We ensure cohesiveness throughout any device any customer uses.</p>
                         </div>
-                        <img src="https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg" alt="" />
+                        <img class="ig-slider-bg" src="img/polygons-cropped.jpg" alt="" />
                     </li>
                     <li>
                         <div class="image-cap">
-                            <img width="100" src="img/features/coding.svg" alt="" />
+                            <img class="ig-img-lg" width="100" src="img/slider/coding.svg" alt="" />
                         </div>
                         <div class="text-cap">
                             <h4>New and Clean Code</h4>
-                            <p>We pride ouselves in creating clear and easy to <br> read code. This allows the site to be easy to <br> comprehend for your employees and customers <br> as well as be maintained without any trouble!</p>
-                            <a href="#" class="text-link">Learn more</a>
+                            <p>We pride ouselves in creating clear and easy to read code. This allows the site to be easy to comprehend for your employees and customers as well as be maintained without any trouble!</p>
                         </div>
-                        <img src="https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg" alt="" />
+                        <img class="ig-slider-bg" src="img/polygons-cropped.jpg" alt="" />
                     </li>
                     <li>
                         <div class="image-cap">
-                            <img class="ig-img-med" src="img/security-support.png" alt="" />
+                            <img class="ig-img-lg" src="img/slider/security.png" alt="" />
                         </div>
                         <div class="text-cap">
                             <h4>Security and Support</h4>
                             <p>With lock tight application security, your mind can be at peace knowing that you have you and your customers' information safe and secure. We also provide live human support when something happens that may leave you stumped.
                             </p>
-                            <a href="#" class="text-link">Learn more</a>
                         </div>
-                        <img src="https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg" alt="" />
+                        <img class="ig-slider-bg" src="img/polygons-cropped.jpg" alt="" />
                     </li>
                     <li>
                         <div class="image-cap">
-                            <img class="ig-img-md" src="img/features/paintbrush.png" alt="" />
+                            <img class="ig-img-lg" src="img/slider/nerd.svg" alt="" />
                         </div>
                         <div class="text-cap">
                             <h4>Custom Made Graphics</h4>
-                            <p>At Imagine Geek we provide custom graphics for <br> your site so it stands out from other sites. Your <br>website will cater to your audience as well as leave them impressed.</p>
-                            <a href="#" class="text-link">Learn more</a>
+                            <p>At Imagine Geek we provide custom graphics for your site so it stands out from other sites. Your website will cater to your audience as well as leave them impressed.</p>
                         </div>
-                        <img src="https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg" alt="" />
+                        <img class="ig-slider-bg" src="img/polygons-cropped.jpg" alt="" />
                     </li>
                 </ul>
             </div>
@@ -297,7 +292,7 @@
                         <li class="portfolio-item" data-id="id-0" data-type="web">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/emerge_agenda.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/emerge_agenda-cropped.jpg" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
                                 <img src="img/projects/emerge_agenda.jpg" class="img-gallery" alt="" />
@@ -306,55 +301,55 @@
                         <li class="portfolio-item" data-id="id-1" data-type="brand">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/grayline-risk-management.jpg" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/grayline-risk-management.jpg" class="img-gallery" alt="" />
+                                <img src="img/projects/grayline-risk-management-cropped.jpg" class="img-gallery" alt="" />
                             </div>
                         </li>
                         <li class="portfolio-item" data-id="id-2" data-type="apps">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/jpay-blog.png" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/jpay-blog.png" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/jpay-blog.png" class="img-gallery" alt="" />
+                                <img src="img/projects/jpay-blog-cropped.png" class="img-gallery" alt="" />
                             </div>
                         </li>
                         <li class="portfolio-item" data-id="id-3" data-type="web">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/jpay_enterprise.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/jpay_enterprise.jpg" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/jpay_enterprise.jpg" class="img-gallery" alt="" />
+                                <img src="img/projects/jpay_enterprise-cropped.jpg" class="img-gallery" alt="" />
                             </div>
                         </li>
                         <li class="portfolio-item" data-id="id-5" data-type="apps">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/paradigm-zoomed-features.png" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/paradigm-zoomed-features.png" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/paradigm-zoomed-features.png" class="img-gallery" alt="" />
+                                <img src="img/projects/paradigm-zoomed-features-cropped.png" class="img-gallery" alt="" />
                             </div>
                         </li>
                         <li class="portfolio-item" data-id="id-6" data-type="brand">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/ucf-student-learning.jpg" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/ucf-student-learning.jpg" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/ucf_coding_bootcamp.png" class="img-gallery" alt="" />
+                                <img src="img/projects/ucf_coding_bootcamp-cropped.png" class="img-gallery" alt="" />
                             </div>
                         </li>
                         <li class="portfolio-item" data-id="id-4" data-type="graphic">
                             <div class="image-wrapper">
                                 <div class="image-caption">
-                                    <a href="img/projects/jpay_forum_about.png" class="zoom" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
+                                    <a href="img/projects/jpay_saas.png" class="zoom fas fa-search-plus" data-pretty="prettyPhoto"><i class="fas fa-zoom-in"></i></a>
                                     <div class="image-title"><a href="#">Facete deleniti constituam sea nemore timeam nusquam </a></div>
                                 </div>
-                                <img src="img/projects/jpay_saas.png" class="img-gallery" alt="" />
+                                <img src="img/projects/jpay_saas-cropped.png" class="img-gallery" alt="" />
                             </div>
                         </li>
                     </ul>
@@ -365,8 +360,8 @@
             <div class="container">
                 <div class="row text-center cbp-so-section">
                     <div class="col-md-10 col-md-offset-1">
-                        <p class="cbp-so-side cbp-so-side-top">If you have a need for a freelance web designer to help you with your web project please get in touch.</p>
-                        <a href="#" class="btn btn-md cbp-so-side cbp-so-side-bottom">Get started!</a>
+                        <h3 class="cbp-so-side cbp-so-side-top">We are always hiring talented engineers!</h3>
+                        <a href="mailto:careers@imaginegeek.com" class="btn btn-md cbp-so-side cbp-so-side-bottom margintop30"><i class="fas fa-envelope"></i>&nbsp;Email us your resume!</a>
                     </div>
                 </div>
             </div>
@@ -437,13 +432,13 @@
                             <div class="form-group">
                                 <div class="col-md-12 margintop30 text-center">
                                     <label>Project Description</label>
-                                    <textarea name="projectDescription" class="form-control margintop15" id="projectDescription" cols="100" rows="14">
+                                    <textarea name="projectDescription" class="form-control margintop15" id="projectDescription" cols="100" rows="2">
                                         </textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-md-12 margintop30 marginbot30 text-center">
-                                    <button name="quoteSubmit" class="btn btn-md">Get it now!</button>
+                                    <button name="quoteSubmit" class="btn btn-md">Get in touch!</button>
                                 </div>
                             </div>
                         </form>

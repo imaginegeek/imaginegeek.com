@@ -1,110 +1,432 @@
-::-webkit-datetime-edit-year-field:not([aria-valuenow]),
-::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
-}
-
-.ig-container textarea {
-    padding: 1em;
-}
-
-.ig-container .ig-gradient {
-    background-image: linear-gradient(to bottom right, rgba(192, 6, 152, 0.67), rgba(201, 100, 23, 0.67), rgba(12, 190, 12, 0.67));
-}
-
-.ig-container .ig-font-white {
-    color: #fff;
-}
-
-.ig-container .ig-raised-font {
-    font-weight: 900;
-    color: #fff;
-}
-
-.ig-container {
-    min-width: 320px;
-}
-
-.ig-container .ig-flash-section {
-    background-color: #000;
-}
-
-.ig-container .fas.fa-bars {
-    font-size: 2em;
-    color: #fff;
-}
-
-.ig-container .ig-img-sm {
-    max-width: 163px;
-    margin-top: 38%;
-    margin-left: 18%;
-}
-
-.ig-container .image-cap .ig-img-med {
-    max-width: 200px;
-    top: 56%;
-    margin-top: 22%;
-    margin-left: 20%;
-}
-
-.ig-container .image-cap .ig-img-lg {
-    max-width: 550px;
-    top: 24%;
-}
-
-.ig-container input,
-.ig-container select,
-.ig-container textarea {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-}
-
-.ig-container #quote {
-    display: inline;
-    font-size: 22px;
-    box-sizing: border-box;
-    background-color: #8b34c2;
-    border: none;
-    border-radius: 0;
-    margin: auto auto 3em auto;
-    border: 5px transparent solid;
-}
-
-.ig-container .home-intro-content {
-    margin-bottom: 5em;
-}
-
-.ig-container .staggered-alignment:nth-child(even) {
-    text-align: left;
-}
-
-.ig-container .staggered-alignment:nth-child(odd) {
-    text-align: right;
-}
-
-.ig-container .ig-work-it-dark .work-it-icon {
-    font-size: 0.8em;
-}
-
-.ig-container .ig-work-it-dark .work-it-icon,
-.ig-container .ig-work-it-dark .work-it-text {
-    color: #030303;
-    background: transparent;
-}
-
-.ig-container .headline h4 {
-    width: 100%;
-}
-
-.ig-container .image-cap {
-    position: absolute;
-    width: 35%;
-    top: 13.5%;
-    margin-left: 10%;
-}
-
-.ig-mascot {
-    width: 180px;
-}
+                                                                ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+                                                                ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+                                                                ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+                                                                   color: transparent;
+                                                               }
+                                                               
+                                                               .ig-container .accent-bg h1,
+                                                               .ig-container .ig-gradient h1,
+                                                               .ig-container .accent-bg h2,
+                                                               .ig-container .ig-gradient h2,
+                                                               .ig-container .accent-bg h2,
+                                                               .ig-container .ig-gradient h3,
+                                                               .ig-container .accent-bg h3,
+                                                               .ig-container .ig-gradient h4 {
+                                                                   font-weight: 400;
+                                                               }
+                                                               
+                                                               .ig-container .flexslider h4 {
+                                                                   white-space: nowrap;
+                                                               }
+                                                               
+                                                               .ig-container .ig-gradient p {
+                                                                   font-weight: 200;
+                                                               }
+                                                               
+                                                               .ig-container textarea {
+                                                                   padding: 1em;
+                                                               }
+                                                               
+                                                               .ig-container .ig-gradient {
+                                                                   background-image: linear-gradient(to bottom right, rgba(192, 6, 152, 0.67), rgba(201, 100, 23, 0.67), rgba(12, 190, 12, 0.67));
+                                                               }
+                                                               
+                                                               .ig-container .ig-font-white {
+                                                                   color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container .ig-raised-font {
+                                                                   font-weight: 900;
+                                                                   color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container {
+                                                                   min-width: 320px;
+                                                               }
+                                                               
+                                                               .ig-container .ig-flash-section {
+                                                                   background-color: #000;
+                                                               }
+                                                               
+                                                               .ig-container .fas.fa-bars {
+                                                                   font-size: 2em;
+                                                                   color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container .ig-img-sm {
+                                                                   max-width: 163px;
+                                                                   margin-top: 38%;
+                                                                   margin-left: 18%;
+                                                               }
+                                                               
+                                                               .ig-container .image-cap .ig-img-med {
+                                                                   max-width: 200px;
+                                                                   top: 56%;
+                                                                   margin-top: 22%;
+                                                                   margin-left: 20%;
+                                                               }
+                                                               
+                                                               .ig-container .image-cap .ig-img-lg {
+                                                                   max-width: 500px;
+                                                                   top: 20%;
+                                                                   border-radius: 100%;
+                                                                   background-color: #2a2a2a;
+                                                                   margin-top: -14%;
+                                                                   padding: 1em;
+                                                               }
+                                                               
+                                                               .ig-container input,
+                                                               .ig-container select,
+                                                               .ig-container textarea {
+                                                                   border-top: none;
+                                                                   border-left: none;
+                                                                   border-right: none;
+                                                                   border-radius: 0;
+                                                               }
+                                                               
+                                                               .ig-container #quote {
+                                                                   display: inline;
+                                                                   font-size: 2em;
+                                                                   box-sizing: border-box;
+                                                                   background-color: #8b34c2;
+                                                                   border: none;
+                                                                   border-radius: 0;
+                                                                   font-weight: 400;
+                                                                   margin: auto auto 3em auto;
+                                                                   border: 5px transparent solid;
+                                                               }
+                                                               
+                                                               .ig-container .home-intro-content {
+                                                                   margin-bottom: 5em;
+                                                               }
+                                                               
+                                                               .ig-container .staggered-alignment:nth-child(even) {
+                                                                   text-align: left;
+                                                               }
+                                                               
+                                                               .ig-container .staggered-alignment:nth-child(odd) {
+                                                                   text-align: right;
+                                                               }
+                                                               
+                                                               .ig-container .ig-work-it-dark .work-it-icon {
+                                                                   font-size: 0.8em;
+                                                               }
+                                                               
+                                                               .ig-container .ig-work-it-dark .work-it-icon,
+                                                               .ig-container .ig-work-it-dark .work-it-text {
+                                                                   color: #030303;
+                                                                   background: transparent;
+                                                               }
+                                                               
+                                                               .ig-container .headline h4 {
+                                                                   width: 100%;
+                                                               }
+                                                               
+                                                               .ig-mascot {
+                                                                   width: 180px;
+                                                               }
+                                                               
+                                                               .work-it-wrapper.ig-work-it-dark .work-it-contain:hover .fas {
+                                                                   background-color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container .btn:hover,
+                                                               .ig-container .btn:focus {
+                                                                   background: #8b34c2;
+                                                                   color: #fff;
+                                                                   border-color: #fff;
+                                                                   text-decoration: none;
+                                                               }
+                                                               
+                                                               .ig-container .ig-underline::before {
+                                                                   top: 0;
+                                                                   left: 0;
+                                                                   right: 0;
+                                                                   bottom: 0;
+                                                                   margin: auto;
+                                                                   /* width: 50%;
+    background: #fff;
+    height: 3px; */
+                                                                   content: '';
+                                                                   position: absolute;
+                                                               }
+                                                               
+                                                               .ig-container .work-it-text {
+                                                                   background: transparent;
+                                                               }
+                                                               
+                                                               .ig-container .work-it-lifted-text-sm .work-it-text {
+                                                                   margin-top: -20px;
+                                                               }
+                                                               
+                                                               .ig-container .work-it-lifted-text-md .work-it-text {
+                                                                   margin-top: -40px;
+                                                               }
+                                                               
+                                                               .ig-container .work-it-lifted-text-lg .work-it-text {
+                                                                   margin-top: -60px;
+                                                               }
+                                                               
+                                                               .ig-container .portfolio-categ li.active a {
+                                                                   cursor: pointer;
+                                                               }
+                                                               
+                                                               .ig-container .portfolio-categ li.active a:active,
+                                                               .ig-container .portfolio-categ li.active a:focus,
+                                                               .ig-container .portfolio-categ li.active a {
+                                                                   background-color: #ec2059;
+                                                                   color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container .portfolio-categ li.active a:hover {
+                                                                   background-color: #ec2389;
+                                                                   color: #fff;
+                                                               }
+                                                               
+                                                               .ig-container .portfolio-categ li.active a {
+                                                                   cursor: not-allowed;
+                                                               }
+                                                               
+                                                               .ig-container .text-cap h4 {
+                                                                   font-size: 36px;
+                                                                   line-height: 48px;
+                                                                   width: 80%;
+                                                                   border-bottom: 1px solid #fff;
+                                                                   padding-bottom: 15px;
+                                                                   margin-bottom: 25px;
+                                                               }
+                                                               
+                                                               .ig-call-button-wrapper {
+                                                                   position: absolute;
+                                                                   top: 35px;
+                                                                   left: 267px;
+                                                               }
+                                                               
+                                                               .ig-call-button {
+                                                                   color: #fff;
+                                                                   padding: 0.7em;
+                                                                   border-color: #fff;
+                                                               }
+                                                               
+                                                               .ig-call-button i {
+                                                                   font-size: 18px;
+                                                               }
+                                                               
+                                                               @media (min-width: 2200px) {
+                                                                   p {
+                                                                       font-size: 2.8em;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (min-width: 2199px) {
+                                                                   h5 {
+                                                                       font-size: 2.8em;
+                                                                   }
+                                                                   p {
+                                                                       font-size: 2.6em;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (min-width: 1500px) {
+                                                                   .ig-container .image-cap {
+                                                                       margin-bottom: 200px;
+                                                                       margin-left: 200px;
+                                                                   }
+                                                                   .ig-container .flexslider {
+                                                                       max-height: 680px;
+                                                                   }
+                                                                   .ig-container .container {
+                                                                       width: 1350px;
+                                                                   }
+                                                                   .text-cap p {
+                                                                       font-size: 2.1em;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (min-width: 2400px) {
+                                                                   .ig-container .image-cap .ig-img-lg {
+                                                                       margin-left: 30%;
+                                                                       margin-top: -140px;
+                                                                   }
+                                                                   .text-cap {
+                                                                       top: 250px;
+                                                                   }
+                                                                   .ig-container .flexslider {
+                                                                       max-height: 680px;
+                                                                   }
+                                                                   .ig-container .container {
+                                                                       width: 1550px;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (min-width: 2800px) {
+                                                                   .ig-container .image-cap .ig-img-lg {
+                                                                       margin-left: 50%;
+                                                                       margin-top: -190px;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 1200px) {
+                                                                   .ig-container .flexslider {
+                                                                       height: 322px;
+                                                                   }
+                                                                   .ig-container .image-cap {
+                                                                       display: none;
+                                                                   }
+                                                                   .ig-container .text-cap {
+                                                                       display: block;
+                                                                       width: 85%;
+                                                                       left: 0;
+                                                                       top: 10%;
+                                                                       margin-left: 10%;
+                                                                   }
+                                                                   .ig-container .home-intro-content {
+                                                                       margin-bottom: 5em;
+                                                                       margin-top: 2em;
+                                                                   }
+                                                                   .ig-container .ig-call-button-wrapper {
+                                                                       position: relative;
+                                                                       top: 0;
+                                                                       background: #2f2f2f;
+                                                                       background: transparent;
+                                                                       z-index: -1;
+                                                                       padding: 0em;
+                                                                       left: 0;
+                                                                       text-align: right;
+                                                                   }
+                                                                   .ig-container .ig-call-button-wrapper .btn:active,
+                                                                   .ig-container .ig-call-button-wrapper .btn:hover {
+                                                                       background-color: #7a34c2;
+                                                                   }
+                                                                   .ig-container .ig-call-button-wrapper .btn {
+                                                                       border: none;
+                                                                       border-radius: 0;
+                                                                       background-color: #8b34c2;
+                                                                       cursor: pointer;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 720px) {
+                                                                   .ig-container .flex-next,
+                                                                   .ig-container .flex-prev {
+                                                                       width: 50%;
+                                                                       background: transparent;
+                                                                   }
+                                                                   .ig-container .home-intro-content {
+                                                                       margin-bottom: 5em;
+                                                                       margin-top: 12px;
+                                                                   }
+                                                                   .ig-mascot {
+                                                                       width: 132px;
+                                                                   }
+                                                                   #home {
+                                                                       background-attachment: initial;
+                                                                   }
+                                                                   .ig-container #quote {
+                                                                       font-size: 1em;
+                                                                       letter-spacing: 0.09em;
+                                                                   }
+                                                                   .ig-container .home-wrapper {
+                                                                       min-height: 440px;
+                                                                   }
+                                                                   .ig-slider-bg {
+                                                                       width: 180% !important;
+                                                                   }
+                                                                   .image-cap img {
+                                                                       width: 200%;
+                                                                   }
+                                                                   .work-it-text {
+                                                                       text-align: center;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 600px) {
+                                                                   h4,
+                                                                   h5 {
+                                                                       font-weight: 700;
+                                                                   }
+                                                                   .ig-container #quote {
+                                                                       font-size: 0.9em;
+                                                                       letter-spacing: 0.07em;
+                                                                   }
+                                                                   p {
+                                                                       font-size: 1.4em;
+                                                                   }
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 1.7em;
+                                                                       line-height: 1.2em;
+                                                                       margin-top: 39px;
+                                                                   }
+                                                                   .ig-container .flexslider {
+                                                                       height: auto;
+                                                                   }
+                                                                   .ig-container .container {
+                                                                       width: 90%;
+                                                                   }
+                                                                   .ig-container .work-it-text {
+                                                                       width: 100%;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 500px) {
+                                                                   p {
+                                                                       font-size: 1.4em;
+                                                                       font-weight: 400;
+                                                                   }
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 1.4em;
+                                                                       margin-top: 69px;
+                                                                       line-height: 1.1em;
+                                                                   }
+                                                                   .ig-container .container {
+                                                                       width: 100%;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 499px) {
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 1.6em;
+                                                                       margin-top: 45px;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 420px) {
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 2em;
+                                                                       margin-top: 25px;
+                                                                   }
+                                                                   p {
+                                                                       font-size: 1.6em;
+                                                                       font-weight: 400;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 400px) {
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 1.6em;
+                                                                       line-height: 1.2em;
+                                                                       margin-top: 10px;
+                                                                   }
+                                                                   p {
+                                                                       font-size: 1.5em;
+                                                                       font-weight: 400;
+                                                                   }
+                                                               }
+                                                               
+                                                               @media (max-width: 350px) {
+                                                                   .ig-container .text-cap h4 {
+                                                                       white-space: normal;
+                                                                       font-size: 1.5em;
+                                                                       line-height: 1.2em;
+                                                                       margin-top: 0;
+                                                                   }
+                                                                   p {
+                                                                       font-size: 1.3em;
+                                                                       font-weight: 600;
+                                                                   }
+                                                               }

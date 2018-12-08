@@ -114,9 +114,31 @@ $(function() {
         var $section = $(`#${sectionName}`);
 
         $('html, body').animate({
-            scrollTop: $section.offset().top - offset
+            scrollTop: $section.offset().top
         }, 2000);
     }
+
+    function toggleNavSelectionFromClick(navLinkSelectors) {
+        var navLinksSelector = navLinkSelectors.join(', ');
+        var $navLinks = $(navLinksSelector);
+
+        function handleLinkSelection(event) {
+            var $selectedNavLink = $(this);
+
+            event.preventDefault();
+
+            setTimeout(function() {
+                $navLinks.each(function() {
+                    $(this).removeClass('selected');
+                });
+                $selectedNavLink.addClass('selected');
+            }, 2000);
+        }
+
+        $navLinks.click(handleLinkSelection);
+    }
+
+    toggleNavSelectionFromClick(['#GoToHome', '#GoToWorks', '#GoToFeatures', '#GoToGallery']);
 
     // Bind quote request submission.
     $('#quote-form').submit(function(event) {
@@ -135,6 +157,6 @@ $(function() {
         });
 
         event.stopPropagation();
-        togglePageSection('quote-section', 100);
+        togglePageSection('quote-section', -100);
     });
 });
