@@ -54,8 +54,8 @@ $(function() {
     };
 
     function fieldValidate(fieldname, value) {
+        var errorMessage = 'contains invalid characters.';
         var regExp;
-        var errorMessage;
         var valid;
         var required;
         var descriptor;
@@ -67,13 +67,11 @@ $(function() {
         switch (fieldname) {
             case 'firstName':
                 regExp = /^[a-z ,.'-]+$/i;
-                errorMessage = 'is an invalid first name.';
                 required = true;
                 descriptor = 'first name';
                 break;
             case 'lastName':
                 regExp = /^[a-z ,.'-]+$/i;
-                errorMessage = 'is an invalid last name.';
                 required = true;
                 descriptor = 'last name';
                 break;
@@ -135,11 +133,11 @@ $(function() {
             }
 
             if (errorsObj[fieldname]) {
-                errorMessageUi += errorsObj[fieldname];
+                errorMessageUi += '<li>' + errorsObj[fieldname] + '</li>';
             }
         }
 
-        return errorMessageUi;
+        return '<ul class="list">' + errorMessageUi + '</ul>';
     }
 
     function sendMappedUserInputFromUi() {
@@ -173,8 +171,7 @@ $(function() {
         });
 
         if (errorsEncountered) {
-            togglePageSection('form-errors', -100, 350);
-            $formErrorsOutput.text(handleValidationErrorsEvent(errors));
+            $formErrorsOutput.html(handleValidationErrorsEvent(errors));
         } else {
             $formErrorsOutput.text('');
             submitUserInput(mapInputToPayload(payload));
@@ -242,8 +239,11 @@ $(function() {
         if (!window.submittedAttempted) {
             window.submitAttempted = true;
         }
+
         if (sendMappedUserInputFromUi()) {
             displayConfirmation();
+        } else {
+            togglePageSection('form-errors', -100, 350);
         }
     });
 

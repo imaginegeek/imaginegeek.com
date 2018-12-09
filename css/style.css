@@ -48,6 +48,7 @@ header {
 
 .home-intro {
     margin-bottom: 40px;
+    height: 100px !important;
 }
 
 .home-intro-content li {
