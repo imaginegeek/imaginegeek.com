@@ -544,7 +544,7 @@ Portfolio
     position: relative;
     overflow: hidden;
     height: 200px;
-    width: 300px;
+    width: auto;
 }
 
 .img-gallery {

@@ -1,10 +1,7 @@
 (function($) {
     'use strict';
 
-    setTimeout(function() {
-        $('.ig-container').addClass('animated').removeClass('hidden').addClass('fadeIn')
-    }, 20);
-
+    $('.ig-container').addClass('animated').removeClass('hidden').addClass('fadeIn');
 
     /*
     Smooth scroll

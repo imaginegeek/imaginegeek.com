@@ -24,10 +24,6 @@ $(function() {
         if (startDate && endDate) {
             startDate = startDate.split('-');
             endDate = endDate.split('-');
-        } else {
-            // Prevent index out of bound exception if no date is provided for project start/end.
-            startDate = '   ';
-            endDate = '   ';
         }
 
         var payload = {
@@ -38,12 +34,12 @@ $(function() {
             'entry.939478713': companyName,
             'entry.1440709051': projectType,
             'entry.1779516715': projectDescription,
-            'entry.864357190_year': startDate[0],
-            'entry.864357190_month': startDate[1],
-            'entry.864357190_day': startDate[2],
-            'entry.1047530191_year': endDate[0],
-            'entry.1047530191_month': endDate[1],
-            'entry.1047530191_day': endDate[2],
+            'entry.864357190_year': startDate ? startDate[0] : null,
+            'entry.864357190_month': startDate ? startDate[1] : null,
+            'entry.864357190_day': startDate ? startDate[2] : null,
+            'entry.1047530191_year': endDate ? endDate[0] : null,
+            'entry.1047530191_month': endDate ? endDate[1] : null,
+            'entry.1047530191_day': endDate ? endDate[2] : null,
             ffv: 1,
             draftResponse: [],
             pageHistory: 0,
@@ -83,6 +79,7 @@ $(function() {
                 break;
         }
 
+        // Skip validation on not-required fields.
         if (!value && required) {
             return formatErrorMessage(descriptor, 'cannot be blank.');
         } else if (typeof regExp === 'object') {
@@ -181,6 +178,7 @@ $(function() {
     }
 
     $('[name="firstName"], [name="lastName"], [name="emailAddress"]').on('keyup', function() {
+        // Allows validation to be run on keyup after a submit happens and there has been rejected.
         if (window.submitAttempted) {
             sendMappedUserInputFromUi();
         }
@@ -234,17 +232,16 @@ $(function() {
 
     // Bind quote request submission.
     $('#quote-form').submit(function(event) {
+        var validFormModel = sendMappedUserInputFromUi();
+
         event.stopPropagation();
         event.preventDefault();
+
         if (!window.submittedAttempted) {
             window.submitAttempted = true;
         }
 
-        if (sendMappedUserInputFromUi()) {
-            displayConfirmation();
-        } else {
-            togglePageSection('form-errors', -100, 350);
-        }
+        validFormModel ? displayConfirmation() : togglePageSection('form-errors', -100, 350);
     });
 
     // Bind getQuotes section display
