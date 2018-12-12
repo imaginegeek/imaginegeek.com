@@ -15,7 +15,7 @@ header {
     background-image: url(https://i.pinimg.com/originals/4f/1d/2d/4f1d2d183f89d9cc4c7f50be0ba60039.jpg);
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 127px;
+    margin-top: 120px;
     color: #fff;
     font-size: 20px;
     line-height: 30px;
@@ -1354,6 +1354,9 @@ Custom right spacer
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 10px;
+    }
     .ig-container .home-intro-content {
         display: block;
         position: relative;
