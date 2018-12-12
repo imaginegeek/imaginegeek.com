@@ -1254,7 +1254,7 @@ Custom right spacer
         padding: 5px 25px 8px 25px;
     }
     .portfolio-area li {
-        min-height: 270px;
+        height: 200px;
     }
     .slider-wrapper {
         width: 631px;
@@ -1321,7 +1321,11 @@ Custom right spacer
         min-height: 130px;
     }
     .image-wrapper {
-        border-radius: 10px;
+        width: 100%;
+    }
+    .portfolio-area li {
+        width: 46%;
+        min-height: 130px;
     }
     .main-form-wrapper {
         margin-bottom: 40px;
@@ -1354,16 +1358,16 @@ Custom right spacer
         position: relative;
     }
     .home-intro h3 {
-        font-size: 1.3em;
+        font-size: 1.2em !important;
         line-height: 1.2em;
-        margin-bottom: 7%;
+        margin-top: 1.35em;
+        margin-bottom: 0;
     }
-    .ig-container #quote.btn-tilted {
+    .ig-container #quote {
         font-size: 1em;
         left: 0;
         line-height: 0.4em;
-        top: 2.5em;
-        padding: 2em;
+        padding: 1em;
         width: 100%;
     }
     .slider-bg,
@@ -1381,6 +1385,9 @@ Custom right spacer
     .navbar-default .collapse {
         margin: 82px 10px 10px 0;
     }
+    .ig-mascot {
+        margin-top: 32px;
+    }
     .home-intro-content {
         position: absolute;
         left: 0;
@@ -1390,7 +1397,6 @@ Custom right spacer
     }
     .home-wrapper {
         min-height: 420px;
-        max-height: 35vh;
         overflow: hidden;
     }
     .navbar-default li {
@@ -1514,16 +1520,20 @@ Custom right spacer
 @media only screen and (max-width: 650px) {
     .ig-container .home-intro-content {
         display: block;
-        position: relative;
+        position: static;
+        margin-bottom: 0 !important;
     }
-    .ig-container #quote.btn-tilted {
+    .ig-container #quote {
         font-size: 1em;
         left: 0;
         bottom: 0px;
+        position: absolute;
+        width: 100%;
+        margin: 0 !important;
     }
     .home-intro h3 {
         font-size: 1.3em;
-        line-height: 1.2em;
+        line-height: 1.15em;
         margin-bottom: 7%;
     }
     ul.client-list li {
@@ -1566,7 +1576,7 @@ Custom right spacer
     .ig-container .home-intro-content {
         display: block;
     }
-    .ig-container #quote.btn-tilted {
+    .ig-container #quote {
         font-size: 1em;
         left: 0;
         bottom: 0px;

@@ -130,16 +130,19 @@ $(function() {
             }
 
             if (errorsObj[fieldname]) {
-                errorMessageUi += '<li>' + errorsObj[fieldname] + '</li>';
+                errorMessageUi += (
+                    '<li><i class="fas fa-exclamation-circle icon-small"></i>&nbsp;&nbsp;' + errorsObj[fieldname] + '</li>'
+                );
             }
         }
 
         return '<ul class="list">' + errorMessageUi + '</ul>';
     }
 
-    function sendMappedUserInputFromUi() {
+    function sendMappedUserInputFromUi(validationOnly) {
         var payload = {};
         var errors = {};
+        var $controls = $('#quote-form').find('input, textarea, select');
         var controlValueWithNameAndType;
         var type;
         var errorsEncountered;
@@ -147,7 +150,7 @@ $(function() {
         var name;
         var value;
 
-        $('#quote-form').find('input, textarea, select').each(function() {
+        $controls.each(function() {
             var errorMessage;
             $control = $(this);
             controlValueWithNameAndType = getControlValueWithNameAndType($control);
@@ -171,16 +174,21 @@ $(function() {
             $formErrorsOutput.html(handleValidationErrorsEvent(errors));
         } else {
             $formErrorsOutput.text('');
-            submitUserInput(mapInputToPayload(payload));
+
+            if (!validationOnly) {
+                // Clear form UI when model has been validated and a submission is requested.
+                typeof $controls.val === 'function' ? $controls.val('') : $controls.text('');
+                submitUserInput(mapInputToPayload(payload))
+            }
         }
 
         return !errorsEncountered;
     }
 
     $('[name="firstName"], [name="lastName"], [name="emailAddress"]').on('keyup', function() {
-        // Allows validation to be run on keyup after a submit happens and there has been rejected.
+        // Allows validation to be run on keyup after a submit happens and the form model has been rejected.
         if (window.submitAttempted) {
-            sendMappedUserInputFromUi();
+            sendMappedUserInputFromUi(true);
         }
     });
 
@@ -201,10 +209,10 @@ $(function() {
     }
 
     function togglePageSection(sectionName, offset, timing) {
-        var $section = $(`#${sectionName}`);
+        var $section = $('#' + sectionName);
 
         $('html, body').animate({
-            scrollTop: $section.offset().top
+            scrollTop: $section.offset().top + (offset)
         }, timing);
     }
 
@@ -248,11 +256,12 @@ $(function() {
     $('#quote').click(function(event) {
         var $getQuoteRevealTrigger = $(this);
 
+        event.stopPropagation();
+
         $getQuoteRevealTrigger.css({
             transition: 'all ease 500ms',
         });
 
-        event.stopPropagation();
         togglePageSection('quote-section', -100, 2000);
     });
 });
