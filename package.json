@@ -1,0 +1,29 @@
+{
+  "name": "imaginegeek.com",
+  "version": "1.0.0",
+  "description": "Homepage for imaginegeek.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaginegeek/imaginegeek.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imaginegeek/imaginegeek.com/issues"
+  },
+  "homepage": "https://github.com/imaginegeek/imaginegeek.com#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-es2016": "^7.0.0-beta.53",
+    "@babel/preset-stage-1": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/preset-stage-3": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es3": "^1.0.1"
+  }
+}
