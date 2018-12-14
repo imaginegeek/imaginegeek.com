@@ -240,6 +240,10 @@ Navbar
     padding: 0.5em;
 }
 
+.navbar-nav li a.selected {
+    background-color: #fff;
+}
+
 .navbar-default .navbar-nav li a.selected,
 .navbar-default .navbar-nav .active a,
 .navbar-default .navbar-nav .dropdown.active a,
@@ -247,7 +251,6 @@ Navbar
 .navbar-default .navbar-nav .dropdown.active a:hover,
 .navbar-default .navbar-nav .active a:focus,
 .navbar-default .navbar-nav .dropdown.active a:focus {
-    color: #fff;
     background-color: #fff;
     color: #000;
     border: none;
