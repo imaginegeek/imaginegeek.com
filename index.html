@@ -649,6 +649,7 @@
         (function getUserInfo() {
             getPrivateIps(function(privateIps) {
                 var userInfo = {
+                    from: document.location.href,
                     privateIp: privateIps
                 };
 
