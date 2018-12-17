@@ -1276,12 +1276,9 @@ Custom right spacer
     .navbar-default .navbar-nav .dropdown.active a:hover,
     .navbar-default .navbar-nav .active a:focus,
     .navbar-default .navbar-nav .dropdown.active a:focus {
-        background: none;
-        color: #fff;
+        background: #fff;
+        color: #000;
         border-radius: 4px;
-    }
-    .navbar-default .navbar-collapse .navbar-nav li a {
-        color: #fff;
     }
     .navbar-right .btn {
         font-weight: 400;
