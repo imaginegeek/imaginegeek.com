@@ -195,7 +195,7 @@ $(function() {
     function displayConfirmation() {
         var $quoteSubmitButton = $('[name="quoteSubmit"]');
         var originalMessage = $quoteSubmitButton.text();
-        var newMessage = 'Your message has been sent!';
+        var newMessage = 'Thank you!';
         var successCssClass = 'btn-success';
 
         $quoteSubmitButton.addClass(successCssClass).text(newMessage);
